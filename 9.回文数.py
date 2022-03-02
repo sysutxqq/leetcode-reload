@@ -11,6 +11,7 @@ class Solution:
     def isPalindrome(self, x: int) -> bool:
         ## soluton 1
         ## python list reverse()函数
+        ## 转数组，需要注意的是，list的赋值是引用，需要使用[:]来进行赋值
         if x < 0:
             return False
         
@@ -24,5 +25,8 @@ class Solution:
         if res == tmpRes:
             return True
         return False
+
+
+        ##不转字符串
 # @lc code=end
 
